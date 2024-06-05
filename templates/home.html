@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include "index.html" %}
+{% load static %}
+{% block banner %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!-- Banner Start -->
+<section class="banner" id="home">
+  <div class="container row">
+    <div class="textBx colomn">
+      <h2 class="name1">
+        Hello, I'm
+        <br />
+        <span>Bharathikannan</span></span>
+      </h2>
+      <h3>I'm a Back-End Web Developer.</h3>
+      <a href="#about" class="btn">About Me</a>
+    </div>
+    <div class="colomn image-banner">
+      <img class="my-image" src="{% static 'images/my-image.png' %}" alt="my-image" />
+    </div>
 
-<body>
-    <h1> bharathikannan </h1>
-</body>
 
-</html>
+  </div>
+</section>
+<!-- Banner End -->
+
+{% endblock %}
