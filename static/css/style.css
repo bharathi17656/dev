@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: darkcyan;
+    border-radius: 15px;
+    
+   
+}
+
+
+
+.textBx{
+   
+    text-align: left;
+    padding: 25px;  
+    margin-left: 20px;
+    float: left;
+    position: relative;
+    top: 180px;
+    padding-left: 200px;
+    
+
+
+}
+
+.my-image{
+    width: 40%;
+    padding-top: 100px;
+    padding-left: 100px;
+    
+}
+
+
+@keyframes slideUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px); /* Adjust the value as needed */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slide {
+    animation: slideUpDown 4s ease-in-out infinite;
+}
+
+
+.name1{
+    font-size: 60px;   
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.name1.typing-animation span {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black; /* Cursor effect */
+    white-space: nowrap;
+    animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+    width: 0; /* Initially set the width to 0 */
+}
+
+h3{
+    position: relative;
+    top: -40px;
+    left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(193, 7, 7);
+    padding: 10px;
+    width: 25px;
+    border-radius: 5px;
+    position: relative;
+    top: -20px;
+    left: 15px;
+
+   
+}
+
+
+/* Button styles */
+.btn {
+
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #b31616; /* Change this to your preferred button color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+/* Button hover effect */
+.btn:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
