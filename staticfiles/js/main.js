@@ -1,23 +1,12 @@
-// Sticky Navbar
-window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
+document.addEventListener("DOMContentLoaded", function() {
+  var nameElement = document.querySelector('.name1');
+  var duration = 4000; // Duration of the typing animation in milliseconds
+
+  // Add the animation class
+  nameElement.classList.add('typing-animation');
+
+  // Remove the animation class after the duration
+  setTimeout(function() {
+      nameElement.classList.remove('typing-animation');
+  }, duration);
 });
-
-// Toggle Nav
-function toggleMenu() {
-  if (window.innerWidth <= 800) {
-    let menu = document.querySelector(".menu");
-    menu.classList.toggle("active");
-
-    let toggle = document.querySelector(".toggle");
-    toggle.classList.toggle("active");
-  }
-}
-
-
-// update current year
-window.onload = function() {
-  const currentYearEl = document.querySelector("#currentYear");
-  if(currentYearEl) {currentYearEl.innerText = new Date().getFullYear();}
-}
